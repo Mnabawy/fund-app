@@ -1,0 +1,4 @@
+<button (click)="toggleVisible()">Display Details</button>
+
+<p *ngIf="isVisible">Lorem ipsum dolor sit</p>
+<h3 [ngStyle]="{backgroundColor:i >= 5 ? 'blue' :'white' }" *ngFor="let item of list; let i = index" [ngClass]="{whiteColor: i>=5}" >{{item}}</h3>
